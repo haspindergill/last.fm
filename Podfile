@@ -6,6 +6,7 @@ target 'last.fm' do
   use_frameworks!
 pod 'SwiftyJSON', '~> 4.0'
 pod "PagingKit" # add
+pod 'Imaginary'
 
   # Pods for last.fm
 

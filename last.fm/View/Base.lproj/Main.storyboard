@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qmb-sk-SnR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Qmb-sk-SnR">
                                 <rect key="frame" x="20" y="64" width="145" height="145"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Qmb-sk-SnR" secondAttribute="height" multiplier="1:1" id="DWZ-JJ-iI9"/>
@@ -24,20 +24,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WxG-Mx-9WY">
                                 <rect key="frame" x="185" y="99.5" width="209" height="74"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHU-JN-rgo">
-                                        <rect key="frame" x="82" y="0.0" width="45" height="25.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHU-JN-rgo">
+                                        <rect key="frame" x="79.5" y="0.0" width="50" height="25.5"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tab-pJ-Yj3">
-                                        <rect key="frame" x="87.5" y="30.5" width="34" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tab-pJ-Yj3">
+                                        <rect key="frame" x="87" y="30.5" width="35" height="20"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B6-61-ioD">
-                                        <rect key="frame" x="88.5" y="55.5" width="32" height="18.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B6-61-ioD">
+                                        <rect key="frame" x="102" y="55.5" width="4.5" height="18.5"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -61,8 +61,9 @@
                             <constraint firstItem="NCV-QL-gWP" firstAttribute="trailing" secondItem="83e-p9-Fec" secondAttribute="trailing" constant="20" id="2Ja-BX-enS"/>
                             <constraint firstItem="WxG-Mx-9WY" firstAttribute="leading" secondItem="Qmb-sk-SnR" secondAttribute="trailing" constant="20" id="Dig-cH-hPO"/>
                             <constraint firstItem="NCV-QL-gWP" firstAttribute="trailing" secondItem="WxG-Mx-9WY" secondAttribute="trailing" constant="20" id="DkG-VH-iPE"/>
-                            <constraint firstItem="83e-p9-Fec" firstAttribute="top" secondItem="Qmb-sk-SnR" secondAttribute="bottom" constant="8" id="RmO-uO-ynA"/>
-                            <constraint firstItem="WxG-Mx-9WY" firstAttribute="centerY" secondItem="Qmb-sk-SnR" secondAttribute="centerY" id="YgF-AQ-D0Q"/>
+                            <constraint firstItem="Qmb-sk-SnR" firstAttribute="centerY" secondItem="WxG-Mx-9WY" secondAttribute="centerY" priority="999" id="KWp-mg-Kp4"/>
+                            <constraint firstItem="WxG-Mx-9WY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NCV-QL-gWP" secondAttribute="top" constant="20" id="Y2v-Mv-Qxw"/>
+                            <constraint firstItem="83e-p9-Fec" firstAttribute="top" secondItem="Qmb-sk-SnR" secondAttribute="bottom" constant="8" id="c0h-hm-iHi"/>
                             <constraint firstItem="Qmb-sk-SnR" firstAttribute="width" secondItem="cyr-0Y-Sey" secondAttribute="width" multiplier="0.35" id="lz1-xa-mfe"/>
                             <constraint firstItem="83e-p9-Fec" firstAttribute="leading" secondItem="NCV-QL-gWP" secondAttribute="leading" constant="20" id="o6Q-ny-SUg"/>
                             <constraint firstItem="Qmb-sk-SnR" firstAttribute="top" secondItem="NCV-QL-gWP" secondAttribute="top" constant="20" id="vYd-aQ-Xfp"/>
@@ -317,4 +318,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="450" height="450"/>
+    </resources>
 </document>

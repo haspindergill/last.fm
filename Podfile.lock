@@ -1,20 +1,28 @@
 PODS:
+  - Cache (5.2.0)
+  - Imaginary (4.2.0):
+    - Cache (~> 5.0)
   - PagingKit (1.11.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - Imaginary
   - PagingKit
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - Cache
+    - Imaginary
     - PagingKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  Imaginary: dae33d06dbc2ada22f98afef5eb45cc061311a2c
   PagingKit: 0f5ddbf2c742e245eeca450e9c0d1882380c3dc5
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 52f491f2ec4124009f5da158657c37c2834eabad
+PODFILE CHECKSUM: babc29f46e4f7390e48f172a8fd048bdb6ab544b
 
 COCOAPODS: 1.8.4

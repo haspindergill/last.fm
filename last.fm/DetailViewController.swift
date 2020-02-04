@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Imaginary
 
 class DetailViewController: UIViewController {
 
@@ -33,7 +34,12 @@ class DetailViewController: UIViewController {
         }
         urlText.text = data.url
         deatilText.text = (data.streamable ?? "") + " Steamable"
-        artworkImage?.downloadImageFrom(link: data.image?[3].link ?? "", contentMode: UIView.ContentMode.scaleAspectFit)
+        let option = Option()
+        guard let imageUrl = URL(string:data.image?[3].link ?? "") else {
+                             return
+                         }
+        artworkImage?.setImage(url: imageUrl, placeholder: UIImage(named: "placeholder"), option: option) { (response) in
+                   }
     }
 
 }
